@@ -36,6 +36,4 @@ def authenticate(request):
     url = settings.FRESHDESK_URL + "login/sso?name=" + urlquote('{0} {1}'.format(first_name, last_name)) + \
         "&email=" + urlquote(request.user.email) + "&timestamp=" + \
         str(utctime) + "&hash=" + generated_hash
-    print iri_to_uri(url)
-
     return HttpResponseRedirect(iri_to_uri(url))
