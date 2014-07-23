@@ -11,6 +11,7 @@ Django Freshdesk
 .. image:: https://pypip.in/d/django-freshdesk/badge.png
     :target: https://crate.io/packages/django-freshdesk?version=latest
 
+
 Single Sign-On functionallity between Django and Freshdesk.
 
 The Freshdesk documentation for Single Sign-On is located at
@@ -88,7 +89,6 @@ Requirements
 * Python 2.7, 3.2, 3.3 or 3.4
 * Django >= 1.5
 
-
 Bugs and requests
 =================
 
@@ -96,8 +96,7 @@ If you have found a bug or or you have a ny request, please use the issue tracke
 
 https://github.com/ThatGreenSpace/django-freshdesk/issues
 
-
 License
 =======
 
-You can use this under BSD. See `LICENSE <LICENSE>`__ file for details.
+You can use this software under BSD License.
