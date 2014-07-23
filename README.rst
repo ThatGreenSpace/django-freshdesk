@@ -1,7 +1,16 @@
-|travis| |coveralls| |pypi| |downloads|
-
+================
 Django Freshdesk
 ================
+
+.. image:: https://secure.travis-ci.org/ThatGreenSpace/django-freshdesk.png?branch=master
+    :target: https://travis-ci.org/ThatGreenSpace/django-freshdesk
+.. image:: https://coveralls.io/repos/ThatGreenSpace/django-freshdesk/badge.png?branch=master
+    :target: https://coveralls.io/r/ThatGreenSpace/django-freshdesk?branch=master
+.. image:: https://badge.fury.io/py/django-freshdesk.png
+    :target: http://badge.fury.io/py/django-freshdesk
+.. image:: https://pypip.in/d/django-freshdesk/badge.png
+    :target: https://crate.io/packages/django-freshdesk?version=latest
+
 
 Single Sign-On functionallity between Django and Freshdesk.
 
@@ -22,7 +31,7 @@ Getting the code for the latest stable release using pip: ::
 
 You can also download the source and run: ::
 
-      $ python setup.py install
+   $ python setup.py install
 
 Add the application to the project settings
 -------------------------------------------
@@ -82,13 +91,3 @@ License
 
 You can use this under BSD. See `LICENSE
 <LICENSE>`_ file for details.
-
-
-.. |travis| image:: https://secure.travis-ci.org/ThatGreenSpace/django-freshdesk.png?branch=master
-    :target: https://travis-ci.org/ThatGreenSpace/django-freshdesk
-.. |coveralls| image:: https://coveralls.io/repos/ThatGreenSpace/django-freshdesk/badge.png?branch=master
-    :target: https://coveralls.io/r/ThatGreenSpace/django-freshdesk?branch=master
-.. |pypi| image:: https://badge.fury.io/py/django-freshdesk.png
-    :target: http://badge.fury.io/py/django-freshdesk
-.. |downloads| image:: https://pypip.in/d/django-freshdesk/badge.png
-    :target: https://crate.io/packages/django-freshdesk?version=latest
