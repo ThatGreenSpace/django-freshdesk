@@ -1,4 +1,6 @@
 include setup.py
 include README.rst
-include CHANGELOG.rst
+include AUTHORS.rst
 include MANIFEST.in
+include CHANGELOG.rst
+include LICENSE
