@@ -1,0 +1,3 @@
+coverage
+nose>=1.3.0
+django-nose>=1.2
