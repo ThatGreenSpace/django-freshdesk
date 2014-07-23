@@ -25,11 +25,11 @@ ROOT_URLCONF = 'freshdesk.urls'
 def run_tests():
     from django.conf import settings
     settings.configure(
-        INSTALLED_APPS = INSTALLED_APPS,
-        ROOT_URLCONF = ROOT_URLCONF,
-        DATABASES = DATABASES,
-        FRESHDESK_URL = "http://example.com/",
-        FRESHDESK_SECRET_KEY = "changeme"
+        INSTALLED_APPS=INSTALLED_APPS,
+        ROOT_URLCONF=ROOT_URLCONF,
+        DATABASES=DATABASES,
+        FRESHDESK_URL="http://example.com/",
+        FRESHDESK_SECRET_KEY="changeme"
     )
     from django_nose import NoseTestSuiteRunner
 
