@@ -27,7 +27,7 @@ setup(
     name='django-freshdesk',
     version=freshdesk.__version__,
     description='Single Sign-On functionallity between Django and Freshdesk',
-    long_description=readme + '\n\n' + changelog,
+    long_description=readme + '\n' + changelog,
     url='https://github.com/ThatGreenSpace/django-freshdesk/',
     license='BSD',
     platforms=['OS Independent'],

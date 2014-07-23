@@ -61,7 +61,7 @@ You must specify two settings variables in your settings module.
 
 
 Register the urls
-----------------_
+-----------------
 
 Add the application urls to your urlconf::
 
