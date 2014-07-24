@@ -10,7 +10,8 @@ Django Freshdesk
     :target: http://badge.fury.io/py/django-freshdesk
 .. image:: https://pypip.in/d/django-freshdesk/badge.png
     :target: https://crate.io/packages/django-freshdesk?version=latest
-
+.. image:: https://landscape.io/github/ThatGreenSpace/django-freshdesk/master/landscape.png
+   :target: https://landscape.io/github/ThatGreenSpace/django-freshdesk/master
 
 Single Sign-On functionallity between Django and Freshdesk.
 
