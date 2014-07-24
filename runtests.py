@@ -3,8 +3,6 @@
 
 import sys
 
-from os import path as osp
-
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.auth',
