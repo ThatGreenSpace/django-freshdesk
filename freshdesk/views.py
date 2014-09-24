@@ -24,15 +24,14 @@ def authenticate(request):
 
     first_name = request.user.first_name
     last_name = request.user.last_name
-    if not first_name and not last_name:
-        first_name = "Guinea"
-        last_name = "Pig"
+    username = request.user.username
+    full_name = '{0} {1}'.format(first_name, last_name) if first_name or last_name else username
 
     utctime = int(time.time())
-    data = '{0} {1}{2}{3}'.format(
-        first_name, last_name, request.user.email, utctime)
+    data = '{0}{1}{2}'.format(
+        full_name, request.user.email, utctime)
     generated_hash = hmac.new(
         settings.FRESHDESK_SECRET_KEY.encode(), data.encode(), hashlib.md5).hexdigest()
     url = '{0}login/sso?name={1}&email={2}&timestamp={3}&hash={4}'.format(settings.FRESHDESK_URL,
-        urlquote('{0} {1}'.format(first_name, last_name)), urlquote(request.user.email), utctime, generated_hash)
+        urlquote(full_name), urlquote(request.user.email), utctime, generated_hash)
     return HttpResponseRedirect(iri_to_uri(url))
