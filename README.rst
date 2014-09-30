@@ -3,15 +3,29 @@ Django Freshdesk
 ================
 
 .. image:: https://secure.travis-ci.org/ThatGreenSpace/django-freshdesk.png?branch=master
-    :target: https://travis-ci.org/ThatGreenSpace/django-freshdesk
+   :alt: Build Status
+   :scale: 100%
+   :target: https://travis-ci.org/ThatGreenSpace/django-freshdesk
 .. image:: https://coveralls.io/repos/ThatGreenSpace/django-freshdesk/badge.png?branch=master
-    :target: https://coveralls.io/r/ThatGreenSpace/django-freshdesk?branch=master
+   :alt: Coverage
+   :scale: 100%
+   :target: https://coveralls.io/r/ThatGreenSpace/django-freshdesk?branch=master
 .. image:: https://badge.fury.io/py/django-freshdesk.png
-    :target: http://badge.fury.io/py/django-freshdesk
+   :alt: Pypi version
+   :scale: 100%
+   :target: http://badge.fury.io/py/django-freshdesk
 .. image:: https://pypip.in/d/django-freshdesk/badge.png
-    :target: https://crate.io/packages/django-freshdesk?version=latest
+   :alt: Downloads
+   :scale: 100%
+   :target: https://crate.io/packages/django-freshdesk?version=latest
 .. image:: https://landscape.io/github/ThatGreenSpace/django-freshdesk/master/landscape.png
+   :alt: Code health
+   :scale: 100%
    :target: https://landscape.io/github/ThatGreenSpace/django-freshdesk/master
+.. image:: https://readthedocs.org/projects/django-freshdesk/badge/?version=latest
+   :alt: Documentation Status
+   :scale: 100%
+   :target: https://readthedocs.org/projects/django-freshdesk/
 
 Single Sign-On functionallity between Django and Freshdesk.
 
