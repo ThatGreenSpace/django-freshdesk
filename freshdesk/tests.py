@@ -38,6 +38,6 @@ class ViewsTestCase(django.test.TestCase):
 
         self.client.login(username='phoenixwright', password='changeme')
         response = self.client.get(reverse(views.authenticate), follow=False)
-        expected_url = 'http://example.com/login/sso?name=Guinea%20Pig&email=phoenix.wright%40example.com'
+        expected_url = 'http://example.com/login/sso?name=phoenixwright&email=phoenix.wright%40example.com'
         self.assertEqual(response.status_code, 302)
         self.assertTrue(expected_url in response.get('Location'))

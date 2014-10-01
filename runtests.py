@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import django
 
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
@@ -19,6 +20,11 @@ DATABASES = {
 
 ROOT_URLCONF = 'freshdesk.urls'
 
+MIDDLEWARE_CLASSES = (
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+)
+
 
 def run_tests():
     from django.conf import settings
@@ -27,11 +33,18 @@ def run_tests():
         ROOT_URLCONF=ROOT_URLCONF,
         DATABASES=DATABASES,
         FRESHDESK_URL="http://example.com/",
-        FRESHDESK_SECRET_KEY="changeme"
+        FRESHDESK_SECRET_KEY="changeme",
+        MIDDLEWARE_CLASSES=MIDDLEWARE_CLASSES,
+        TEST_RUNNER='django_nose.NoseTestSuiteRunner'
     )
-    from django_nose import NoseTestSuiteRunner
 
-    test_runner = NoseTestSuiteRunner(verbosity=2)
+    if django.VERSION >= (1, 7, 0):
+        django.setup()
+
+    from django.test.utils import get_runner
+
+    TestRunner = get_runner(settings)
+    test_runner = TestRunner(verbosity=2)
     failures = test_runner.run_tests(['freshdesk'])
     if failures:
         sys.exit(bool(failures))
