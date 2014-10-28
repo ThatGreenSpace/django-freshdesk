@@ -14,5 +14,3 @@ install:
   - pip install tox
 script:
   - tox -e $TOX_ENV
-after_success:
-  - if [[ $TOX_ENV == 'coverage' ]]; then coveralls; fi
