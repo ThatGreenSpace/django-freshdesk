@@ -102,7 +102,7 @@ Requirements
 ============
 
 * Python 2.7, 3.2, 3.3 or 3.4
-* Django >= 1.5
+* Django >= 1.6
 
 Bugs and requests
 =================
