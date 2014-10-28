@@ -3,6 +3,11 @@
 History
 =======
 
+0.2.2
+-----
+
+* Fix Django version compatibility. Django 1.5 not supported anymore.
+
 0.2.1
 -----
 
