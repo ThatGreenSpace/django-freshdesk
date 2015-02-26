@@ -6,9 +6,11 @@ Django Freshdesk
    :alt: Build Status
    :scale: 100%
    :target: https://travis-ci.org/ThatGreenSpace/django-freshdesk
-.. image:: https://coveralls.io/repos/ThatGreenSpace/django-freshdesk/badge.png?branch=master
+.. image:: https://codecov.io/github/ThatGreenSpace/django-freshdesk/coverage.svg?branch=master 
    :alt: Coverage
    :scale: 100%
+   :target: https://codecov.io/github/ThatGreenSpace/django-freshdesk?branch=master
+.. image:: https://coveralls.io/repos/ThatGreenSpace/django-freshdesk/badge.png?branch=master
    :target: https://coveralls.io/r/ThatGreenSpace/django-freshdesk?branch=master
 .. image:: https://badge.fury.io/py/django-freshdesk.png
    :alt: Pypi version
