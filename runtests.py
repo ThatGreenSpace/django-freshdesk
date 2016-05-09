@@ -38,7 +38,7 @@ def run_tests():
         TEST_RUNNER='django_nose.NoseTestSuiteRunner'
     )
 
-    if django.VERSION >= (1, 7, 0):
+    if django.VERSION >= (1, 8, 0):
         django.setup()
 
     from django.test.utils import get_runner
