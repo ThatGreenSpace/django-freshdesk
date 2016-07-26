@@ -31,7 +31,7 @@ def authenticate(request):
     data = u'{0}{1}{2}{3}'.format(
         full_name, settings.FRESHDESK_SECRET_KEY, request.user.email, utctime)
     generated_hash = hmac.new(
-        settings.FRESHDESK_SECRET_KEY.encode(), data.encode(), hashlib.md5).hexdigest()
+        settings.FRESHDESK_SECRET_KEY.encode(), data.encode('utf-8'), hashlib.md5).hexdigest()
     url = u'{0}login/sso?name={1}&email={2}&timestamp={3}&hash={4}'.format(settings.FRESHDESK_URL,
         urlquote(full_name), urlquote(request.user.email), utctime, generated_hash)
     return HttpResponseRedirect(iri_to_uri(url))
