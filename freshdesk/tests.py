@@ -15,7 +15,7 @@ class ViewsTestCase(django.test.TestCase):
         """Test with user not logged in"""
         response = self.client.get(reverse(views.authenticate))
         self.assertEqual(302, response.status_code)
-        self.assertEqual(
+        self.assertIn(
             response['Location'], r'http://testserver%s?next=/freshdesk/' % settings.LOGIN_URL)
 
     def test_user_logged_in(self):
