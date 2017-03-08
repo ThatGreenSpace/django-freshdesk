@@ -67,17 +67,17 @@ Add the application urls to your urlconf
 
 ::
 
-    urlpatterns = patterns('',
+    urlpatterns = [
         ...
         url(r'^login/sso/', include('freshdesk.urls')),
-    )
+    ]
 
 
 Requirements
 ============
 
 * Python 2.7, 3.2, 3.3 or 3.4
-* Django >= 1.5
+* Django >= 1.7
 
 Bugs and requests
 =================

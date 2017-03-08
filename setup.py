@@ -48,7 +48,7 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
     install_requires=[
-        'Django>1.5,<1.10',
+        'Django>1.7',
     ],
     include_package_data=True,
     zip_safe=False,
