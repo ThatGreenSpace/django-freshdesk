@@ -3,6 +3,26 @@
 History
 =======
 
+1.0.1
+-----
+
+* Unicode first
+
+1.0.0
+-----
+
+* Add support for Django
+
+0.4.0
+-----
+
+* Change data for HMAC-MD5 per Freshdesk's change.
+
+0.3.0
+-----
+
+* Add Tox environments for Django 1.8 using Python 2.7, 3.3, 3.4
+
 0.2.2
 -----
 

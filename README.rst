@@ -16,10 +16,6 @@ Django Freshdesk
    :alt: Pypi version
    :scale: 100%
    :target: http://badge.fury.io/py/django-freshdesk
-.. image:: https://pypip.in/d/django-freshdesk/badge.png
-   :alt: Downloads
-   :scale: 100%
-   :target: https://crate.io/packages/django-freshdesk?version=latest
 .. image:: https://landscape.io/github/ThatGreenSpace/django-freshdesk/master/landscape.png
    :alt: Code health
    :scale: 100%
@@ -104,7 +100,7 @@ Requirements
 ============
 
 * Python 2.7, 3.2, 3.3 or 3.4
-* Django >= 1.7
+* Django >= 1.8
 
 Bugs and requests
 =================
