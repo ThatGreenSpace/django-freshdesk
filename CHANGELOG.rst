@@ -3,6 +3,12 @@
 History
 =======
 
+1.1.0
+-----
+
+* Add name to authenticate url
+* Add support for Django 1.11 and Python 3.6
+
 1.0.1
 -----
 
@@ -11,7 +17,7 @@ History
 1.0.0
 -----
 
-* Add support for Django
+* Add support for Django 1.10
 
 0.4.0
 -----
