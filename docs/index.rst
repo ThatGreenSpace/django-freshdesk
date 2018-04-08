@@ -76,7 +76,7 @@ Add the application urls to your urlconf
 Requirements
 ============
 
-* Python 2.7, 3.2, 3.3 or 3.4
+* Python 2.7, 3.4, 3.5 or 3.6
 * Django >= 1.7
 
 Bugs and requests
